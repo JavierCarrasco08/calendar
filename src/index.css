@@ -1,3 +1,17 @@
 html {
   font-family: "Roboto", sans-serif;
 }
+:root {
+  --primary-color-red: #e63946;
+  --white: #f1faee;
+  --primary-color-blue-light: #a8dadc;
+  --primary-color-blue-dark: #1d3557;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
