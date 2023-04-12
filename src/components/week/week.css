@@ -1,0 +1,6 @@
+.calendar__td {
+  text-align: center;
+}
+.today {
+  background-color: var(--primary-color-blue-light);
+}
