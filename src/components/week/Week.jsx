@@ -1,17 +1,23 @@
+import { Fragment } from "react";
+
 export default function Week({ week }) {
+  let dayOne = week.find((e) => e.day === 0);
+  let dayTwo = week.find((e) => e.day === 1);
+  let dayThree = week.find((e) => e.day === 2);
+  let dayFourth = week.find((e) => e.day === 3);
+  let dayFive = week.find((e) => e.day === 4);
+  let daySix = week.find((e) => e.day === 5);
+  let daySeven = week.find((e) => e.day === 6);
+
   return (
     <>
-      {week.map((wk) => (
-        <>
-          <td key={wk.day === 0 && wk.num}>{wk.day === 0 && wk.num}</td>
-          <td key={wk.day === 1 && wk.num}>{wk.day === 1 && wk.num}</td>
-          <td key={wk.day === 2 && wk.num}>{wk.day === 2 && wk.num}</td>
-          <td key={wk.day === 3 && wk.num}>{wk.day === 3 && wk.num}</td>
-          <td key={wk.day === 4 && wk.num}>{wk.day === 4 && wk.num}</td>
-          <td key={wk.day === 5 && wk.num}>{wk.day === 5 && wk.num}</td>
-          <td key={wk.day === 6 && wk.num}>{wk.day === 6 && wk.num}</td>
-        </>
-      ))}
+      <td className="calendar__td">{dayOne ? dayOne.num : "  "}</td>
+      <td className="calendar__td">{dayTwo ? dayTwo.num : "  "}</td>
+      <td className="calendar__td">{dayThree ? dayThree.num : "  "}</td>
+      <td className="calendar__td">{dayFourth ? dayFourth.num : "  "}</td>
+      <td className="calendar__td">{dayFive ? dayFive.num : "  "}</td>
+      <td className="calendar__td">{daySix ? daySix.num : "  "}</td>
+      <td className="calendar__td">{daySeven ? daySeven.num : "  "}</td>
     </>
   );
 }
