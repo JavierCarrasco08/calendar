@@ -1,5 +1,6 @@
 import github from "./../../assets/github.svg";
 import instagram from "./../../assets/instagram.svg";
+import "./footer.css";
 
 export default function Footer() {
   return (
