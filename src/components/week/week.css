@@ -2,5 +2,7 @@
   text-align: center;
 }
 .today {
+  font-weight: 900;
   background-color: var(--primary-color-blue-light);
+  color: var(--white);
 }
