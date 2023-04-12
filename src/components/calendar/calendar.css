@@ -17,3 +17,33 @@
   -ms-border-radius: 0.5rem 0.5rem 0 0;
   -o-border-radius: 0.5rem 0.5rem 0 0;
 }
+@media screen and (min-width: 24em) {
+  .calendar {
+    width: 70%;
+    font-size: 1.2rem;
+  }
+  .calendar__caption {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 33em) {
+  .calendar {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 43em) {
+  .calendar {
+    width: 55%;
+    font-size: 1.5rem;
+  }
+  .calendar__caption {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .calendar {
+    width: 40%;
+  }
+}

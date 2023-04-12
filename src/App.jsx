@@ -7,10 +7,10 @@ import Footer from "./components/footer/Footer";
 function App() {
   const [hour, setHour] = useState(new Date());
 
-  /* useEffect(() => {
+  useEffect(() => {
     let intervalId = setInterval(() => setHour(new Date()), 1000);
     return () => clearInterval(intervalId);
-  }, [hour]); */
+  }, []);
   return (
     <>
       <header className="hero">
