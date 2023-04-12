@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Hour from "./components/hour/Hour";
 import { daysCalendar } from "./utils/days-calendar";
 import Calendar from "./components/calendar/Calendar";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [hour, setHour] = useState(new Date());
@@ -11,12 +12,13 @@ function App() {
     return () => clearInterval(intervalId);
   }, [hour]); */
   return (
-    <main>
+    <>
       <header className="hero">
         <Hour hour={hour.toLocaleTimeString()} />
       </header>
       <Calendar data={daysCalendar()} time={hour} />
-    </main>
+      <Footer />
+    </>
   );
 }
 
