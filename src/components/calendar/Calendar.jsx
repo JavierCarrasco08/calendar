@@ -18,7 +18,7 @@ export default function Calendar({ data, time }) {
       <tbody>
         {data.map((el) => (
           <tr key={el.id}>
-            <Week week={el.data} />
+            <Week week={el.data} today={time.getDate()} />
           </tr>
         ))}
       </tbody>

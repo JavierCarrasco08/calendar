@@ -1,10 +1,19 @@
 .calendar {
   background-color: var(--white);
   width: 90%;
+  color: var(--primary-color-blue-dark);
+  border-spacing: 0;
+  padding: 0.5rem;
 }
 .calendar__caption {
   background-color: var(--primary-color-red);
+  padding: 1rem;
   color: var(--white);
-  font-weight: 600;
-  font-size: 1.2rem;
+  font-weight: 900;
+  font-size: 1.3rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  -webkit-border-radius: 0.5rem 0.5rem 0 0;
+  -moz-border-radius: 0.5rem 0.5rem 0 0;
+  -ms-border-radius: 0.5rem 0.5rem 0 0;
+  -o-border-radius: 0.5rem 0.5rem 0 0;
 }
