@@ -1,3 +1,10 @@
 .calendar {
   background-color: var(--white);
+  width: 90%;
+}
+.calendar__caption {
+  background-color: var(--primary-color-red);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.2rem;
 }

@@ -1,9 +1,9 @@
 import Week from "../week/Week";
-
+import "./calendar.css";
 export default function Calendar({ data, time }) {
   return (
     <table className="calendar">
-      <caption>April {time.toLocaleString()}</caption>
+      <caption className="calendar__caption">{time.toDateString()}</caption>
       <thead className="calendar__week">
         <tr>
           <th className="calendar__day">S</th>
