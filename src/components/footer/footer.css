@@ -7,4 +7,21 @@
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
+  padding: 1rem;
+}
+.foo__enl {
+  transition: transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -ms-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+}
+@media screen and (min-width: 68em) {
+  .foo__enl:hover {
+    transform: translateY(-0.3rem);
+    -webkit-transform: translateY(-0.3rem);
+    -moz-transform: translateY(-0.3rem);
+    -ms-transform: translateY(-0.3rem);
+    -o-transform: translateY(-0.3rem);
+  }
 }
