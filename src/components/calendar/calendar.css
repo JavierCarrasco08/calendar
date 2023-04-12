@@ -3,7 +3,7 @@
   width: 90%;
   color: var(--primary-color-blue-dark);
   border-spacing: 0;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .calendar__caption {
   background-color: var(--primary-color-red);
