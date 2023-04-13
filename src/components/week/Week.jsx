@@ -1,13 +1,7 @@
 import "./week.css";
 
 export default function Week({ week, today }) {
-  let dayOne = week.find((e) => e.day === 0);
-  let dayTwo = week.find((e) => e.day === 1);
-  let dayThree = week.find((e) => e.day === 2);
-  let dayFourth = week.find((e) => e.day === 3);
-  let dayFive = week.find((e) => e.day === 4);
-  let daySix = week.find((e) => e.day === 5);
-  let daySeven = week.find((e) => e.day === 6);
+  let [dayOne, dayTwo, dayThree, dayFourth, dayFive, daySix, daySeven] = week;
   return (
     <>
       <td className={`calendar__td ${dayOne?.num === today ? "today" : null}`}>
